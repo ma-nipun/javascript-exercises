@@ -1,5 +1,10 @@
 const repeatString = function(text,number) {
-    return text.repeat(parseInt(number))
+    if(number < 0){
+        return 'ERROR'
+    }
+    else{
+        return text.repeat(parseInt(number))
+    }
 };
 
 // Do not edit below this line
